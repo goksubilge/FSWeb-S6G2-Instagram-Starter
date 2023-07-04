@@ -8,7 +8,6 @@
 import React from "react";
 import { useState } from "react";
 
-
 // Gönderiler (çoğul!) ve AramaÇubuğu bileşenlerini import edin, çünkü bunlar App bileşeni içinde kullanılacak
 // sahteVeri'yi import edin
 import "./App.css";
@@ -42,7 +41,8 @@ const App = () => {
     <div className="App">
       
       <AramaCubugu term ={ aramaKriteri} setTermCB = { setAramaKriteri}/>
-      <Gonderiler/>
+      <Gonderiler gonderilerProp= {gonderiler} 
+      gonderiyiBegenCB={gonderiyiBegen}/>
       {/* App Çalışıyor / Yukarıdaki metni projeye başladığınızda silin*/}
       {/* AramaÇubuğu ve Gönderiler'i render etmesi için buraya ekleyin */}
       {/* Her bileşenin hangi proplara ihtiyaç duyduğunu kontrol edin, eğer ihtiyaç varsa ekleyin! */}
