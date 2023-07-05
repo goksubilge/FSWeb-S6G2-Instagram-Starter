@@ -19,7 +19,7 @@ const AramaCubugu = (props) => {
         <input type="text" placeholder="Arama"
         value ={props.term}
         onChange={(evt) => props.setTermCB(evt.target.value)}/>
-        {/* buraya value ve onchange ekledim */} 
+        {/* buraya value ve onchange ekledim, onChange i nasıl event ile oluşturduğum kısmı şimdilik ezber !!*/} 
       </form>
       <div className="social-wrapper">
         <div className="social">

@@ -41,11 +41,11 @@ const App = () => {
     <div className="App">
       
       <AramaCubugu term ={ aramaKriteri} setTermCB = { setAramaKriteri}/>
-      <Gonderiler gonderilerProp= {gonderiler} 
-      gonderiyiBegenCB={gonderiyiBegen}/>
-      {/* App Çalışıyor / Yukarıdaki metni projeye başladığınızda silin*/}
-      {/* AramaÇubuğu ve Gönderiler'i render etmesi için buraya ekleyin */}
+      <Gonderiler gonderilerProp= {gonderiler} gonderiyiBegenCB={gonderiyiBegen}/>
+      {/* Metin App Çalışıyor / Yukarıdaki metni projeye başladığınızda silin*/}
+      {/* AramaÇubuğu ve Gönderiler'i (tıpkı bir HTML elemanı gibi) render etmesi için buraya ekleyin */}
       {/* Her bileşenin hangi proplara ihtiyaç duyduğunu kontrol edin, eğer ihtiyaç varsa ekleyin! */}
+      {/* Buradaki Aramaçubuğundaki term ü AramaCubugu.js e bağlamak için input un içine value = props.term dedik, buradaki term ü props yapsın diye  */}
     </div>
   );
 };
