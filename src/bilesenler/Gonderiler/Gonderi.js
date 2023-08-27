@@ -5,23 +5,23 @@ import GonderiBasligi from "./GonderiBasligi";
 
 const Gonderi = (props) => {
   // 🔥 Bu bileşenin parentının aşağıdaki propları düzgün gönderdiğinden emin olun.
-  const { gonderi, gonderiyiBegen } = props;
+  const { gonderipropu, gonderiyiBegen } = props;
 
   return (
     <div className="post-border">
       <GonderiBasligi
-        username={gonderi.username}
-        thumbnailUrl={gonderi.thumbnailUrl}
+        username={gonderipropu.username}
+        thumbnailUrl={gonderipropu.thumbnailUrl}
       />
       <div className="post-image-wrapper">
         <img
           alt="post thumbnail"
           className="post-image"
-          src={gonderi.imageUrl}
+          src={gonderipropu.imageUrl}
         />
       </div>
       {/* BegenBolumu düzgün çalışması için ihtiyaç duyduğu tüm proplara sahip mi? */}
-      <BegenBolumu gonderiyiBegen={() => gonderiyiBegen(gonderi.id)} />
+      <BegenBolumu gonderiyiBegen={() => gonderiyiBegen(gonderipropu.id)} />
       {/* Yorumlar da proplara dikkat istiyor! */}
       <Yorumlar />
     </div>
