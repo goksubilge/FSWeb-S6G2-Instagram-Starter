@@ -12,7 +12,7 @@ const Gonderiler = (props) => {
         return (
           <Gonderi
             gonderipropu={gonderi}
-            gonderiyibegen={gonderiyiBegenCB}
+            gonderiyiBegen={gonderiyiBegenCB}
             key={ind}
           />
         );

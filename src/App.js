@@ -23,8 +23,8 @@ const App = () => {
   const [aramaKriteri, setAramaKriteri] = useState("");
 
   const gonderiyiBegen = (gonderiID) => {
-    /*console.log ("gönderiyi beğen tetiklendi, test yazımız", gonderiID)
-      Bu fonksiyon, belirli bir id ile gönderinin beğeni sayısını bir artırma amacına hizmet eder.
+    console.log("gönderiyi beğen tetiklendi, test yazımız", gonderiID);
+    /*  Bu fonksiyon, belirli bir id ile gönderinin beğeni sayısını bir artırma amacına hizmet eder.
 
       Uygulamanın durumu, React ağacının en üstünde bulunur, ancak iç içe geçmiş bileşenlerin stateleri değiştirememesi adil olmaz!
       Bu fonksiyon, belirli bir gönderinin beğeni sayısını artırılmasına olanak sağlamak amacıyla iç içe geçmiş bileşenlere aktarılır.
@@ -34,6 +34,14 @@ const App = () => {
         - gönderinin idsi "gonderiID" ile eşleşirse, istenen değerlerle yeni bir gönderi nesnesi döndürün.
         - aksi takdirde, sadece gönderi nesnesini değiştirmeden döndürün.
      */
+    setGonderiler(
+      gonderiler.map((item) => {
+        if (item.id === gonderiID) {
+          item.likes = item.likes + 1;
+        }
+        return item;
+      })
+    );
   };
 
   return (
